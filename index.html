@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DapurKurs: Purwarupa</title>
+<meta name="description" content="Purwarupa DapurKurs, aplikasi manajemen risiko bahan baku impor berbasis koperasi untuk perajin tahu tempe.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<main class="show">
+  <section class="intro">
+    <div class="brand" id="brand"><span class="brand-name">DapurKurs</span></div>
+    <h1>Kenaikan harga kedelai terbaca sebelum sampai ke dapur perajin.</h1>
+    <p class="lead">DapurKurs membaca harga kedelai dunia dan kurs rupiah, menghitung dampaknya ke biaya setiap perajin, lalu menghimpun pembelian lewat koperasi agar harga bisa dikunci bersama melalui akad salam.</p>
+    <ol class="steps" id="steps" aria-label="Urutan penggunaan dalam satu siklus belanja kedelai"></ol>
+    <p class="note">Purwarupa untuk essay Milad dan Olimpiade Pendidikan Ekonomi ke-20 tahun 2026. Semua nama, harga, dan jumlah adalah data simulasi. Lihat semua layar sekaligus di <a href="storyboard.html?set=esai">papan cerita</a>.</p>
+  </section>
+  <section class="phone-wrap" aria-label="Tampilan aplikasi">
+    <div class="phone" id="phone"></div>
+    <div class="phone-nav"><button id="prev">Sebelumnya</button><button id="next">Berikutnya</button></div>
+  </section>
+</main>
+<script src="assets/app.js"></script>
+<script>
+  document.getElementById('brand').insertAdjacentHTML('afterbegin', DapurKurs.icon.leaf);
+  DapurKurs.initShow();
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DapurKurs: Papan Cerita</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .sets a { margin-left: 14px; color: var(--leaf); font-weight: 600; }
+  .sets a[aria-current='page'] { color: var(--ink); text-decoration: none; }
+</style>
+</head>
+<body>
+<main class="board">
+  <div class="board-head">
+    <h1>Papan cerita DapurKurs</h1>
+    <nav class="sets" aria-label="Pilih kumpulan layar">
+      <a href="?set=esai" data-set="esai">6 layar untuk badan essay</a>
+      <a href="?set=lampiran" data-set="lampiran">8 layar untuk lampiran</a>
+      <a href="?set=semua" data-set="semua">Semua layar</a>
+      <a href="index.html">Demo interaktif</a>
+    </nav>
+  </div>
+  <div class="board-grid" id="board"></div>
+</main>
+<script src="assets/app.js"></script>
+<script>DapurKurs.initBoard();</script>
+</body>
+</html>
